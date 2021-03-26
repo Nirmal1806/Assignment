@@ -69,7 +69,8 @@ public class XmlService {
 						Node geoDataPersonAttributeValue = geoDataPersonAttributes.getNamedItem("name");
 
 						Element persons = personData.createElement("person");
-
+						String phNo = geoDataPersonEle.getElementsByTagName("phonenumber").item(0).getTextContent() ;
+						if(phNo != null && phNo != "" ) {
 						Attr name = personData.createAttribute("name");
 						name.setValue(geoDataPersonAttributeValue.getNodeValue());
 						persons.setAttributeNode(name);
@@ -85,6 +86,7 @@ public class XmlService {
 						persons.appendChild(address);
 						persons.appendChild(phonenumber);
 						personDataEle.appendChild(persons);
+						}
 					}
 				}
 			}
