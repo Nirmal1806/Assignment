@@ -29,8 +29,8 @@ console.log("hi");
 							var response = "";							
 							    for(var i=0;i<data.length;i++)
 							    {
-							    	response += "\n Person "+ i+1 +" \n"+data[i].name+" \n"+data[i].address+" \n"+data[i].phonenumber
-							    	             +" \n"+data[i].salary+" \n"+data[i].pension;
+							    	response += "\nPerson "+ i+1+"-->" +" \n Name: "+data[i].name+" \n Address: "+data[i].address+" \n Phone Number: "+data[i].phonenumber
+							    	             +" \n Salary: "+data[i].salary+" \n Pension: "+data[i].pension;
 							    	
 							    }
 							      		
