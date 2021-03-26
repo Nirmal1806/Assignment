@@ -26,11 +26,10 @@ console.log("hi");
 						
 							if(data != null && data != "")
 							{
-							var response = "";
-							console.log(data+"cc");
+							var response = "";							
 							    for(var i=0;i<data.length;i++)
 							    {
-							    	response += "\n Person "+ i+1 +" \n"+data[1].name+" \n"+data[1].address+" \n"+data[1].phonenumber
+							    	response += "\n Person "+ i+1 +" \n"+data[i].name+" \n"+data[i].address+" \n"+data[i].phonenumber
 							    	             +" \n"+data[i].salary+" \n"+data[i].pension;
 							    	
 							    }
