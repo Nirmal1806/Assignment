@@ -15,7 +15,7 @@
 	<name>8k-miles-assignment</name>
 	<description>Demo project for Spring Boot MS</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
