@@ -20,7 +20,15 @@ public class MainController {
 	@Autowired
 	DataBaseService dbService;
 	
+	
 	@GetMapping("/")
+	public ModelAndView loginForm()
+	{
+		return new ModelAndView("login");
+	}
+	
+	
+	@GetMapping("/client")
 	public ModelAndView responseForm()
 	{
 		return new ModelAndView("client");
