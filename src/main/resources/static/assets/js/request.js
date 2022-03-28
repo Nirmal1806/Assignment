@@ -7,8 +7,20 @@ console.log("hi");
 		    });
 
 		});
+		
+		$(document).ready(function(){
+	$('#login').click(function (e){		
+				e.preventDefault();
+console.log("hi");
+		        fire_ajax_login();
 
-	function fire_ajax_submit(){
+		    });
+
+		});
+		
+		
+		
+		function fire_ajax_submit(){
 		var field = document.getElementById("field").value;
 		var operator = document.getElementById("operator").value;
 		var keyword = document.getElementById("keyword").value;
@@ -48,5 +60,14 @@ console.log("hi");
 			            alert("An error has occured!!!");
 			        }
 				});
+	}
+
+	function fire_ajax_login(){
+		var name = document.getElementById("name").value;
+		var pwd = document.getElementById("pwd").value;
+
+				if(name=="siddhu" && pwd=="miniproject"){
+					window.location.href = "/client"
+				}
 	}
 
